@@ -1,68 +1,175 @@
-/* About Page */
-.about {
-  max-width: 1000px;
-  margin: 60px auto;
-  text-align: center;
-  padding: 0 20px;
+/* Global */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fffbea; /* light yellow background */
+  color: #333;
 }
 
-.about h1 {
-  font-size: 2.4rem;
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #f9d71c; /* golden yellow */
+}
+
+.navbar .logo {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  color: #7a4f01;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(120deg, #fbe370, #ffeeb4);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
   margin-bottom: 20px;
   color: #222;
 }
 
-.about p {
-  font-size: 1.1rem;
-  margin-bottom: 25px;
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
   color: #444;
-  line-height: 1.7;
 }
 
-.about h2 {
-  margin-top: 40px;
-  margin-bottom: 15px;
-  font-size: 1.6rem;
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #f9d71c;
+  color: #333;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #f7c600;
+}
+
+/* Featured Blogs */
+.featured-blogs {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.featured-blogs h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
   color: #222;
 }
 
-/* Team Section */
-.team {
+.blog-cards {
   display: flex;
+  gap: 25px;
   justify-content: center;
-  align-items: flex-start;
-  gap: 60px;
-  margin-top: 40px;
   flex-wrap: wrap;
 }
 
-.team-member {
-  text-align: center;
-  max-width: 220px;
+.blog-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  flex: 1 1 calc(30% - 20px);
+  min-width: 250px;
+  transition: transform 0.3s;
 }
 
-.team-member img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  margin-bottom: 12px;
+.blog-card:hover {
+  transform: translateY(-5px);
 }
 
-.team-member h3 {
+.blog-card h3 a {
+  text-decoration: none;
+  color: #7a4f01;
   font-size: 1.2rem;
-  margin-bottom: 5px;
-  font-weight: 600;
 }
 
-.team-member p {
+.blog-card p {
   font-size: 0.95rem;
   color: #555;
+  margin-top: 10px;
 }
 
-.team-member .edu {
+.btn.secondary {
+  margin-top: 30px;
+  background: #fff;
+  border: 2px solid #f9d71c;
+}
+
+.btn.secondary:hover {
+  background: #f9d71c;
+}
+
+/* Quick Links */
+.quick-links {
+  background: #fff6d1;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.quick-links h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.links-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.link-card {
+  background: #fff;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.link-card:hover {
+  background: #f9d71c;
+  color: #222;
+}
+
+/* Footer */
+footer {
+  background: #f9d71c;
+  padding: 15px;
+  text-align: center;
   font-size: 0.9rem;
-  color: #777;
-  font-style: italic;
+  color: #333;
 }
